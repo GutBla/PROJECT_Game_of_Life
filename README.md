@@ -1,5 +1,5 @@
 # Game of Life Conway's
-![Java](https://img.shields.io/badge/Project-Java-blue)
+![Java](https://img.shields.io/badge/Java-blue)
 
 ![Protada Game of Life](images/Protada-Game-of-Life.png)
 
