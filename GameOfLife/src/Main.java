@@ -305,7 +305,7 @@ public class Main {
     }
 
     private static void printTitle() {
-        System.out.println(ORANGE + "\n☐ ⏹ ☐ ===================================== ⏹ ☐ ⏹" + RESET);
+        System.out.println(ORANGE + "☐ ⏹ ☐ ===================================== ⏹ ☐ ⏹" + RESET);
         System.out.println(ORANGE + "☐ ☐ ⏹ *       GAME OF LIFE DE CONWAY      * ☐ ⏹ ⏹" + RESET);
         System.out.println(ORANGE + "⏹ ⏹ ⏹ ===================================== ☐ ⏹ ☐" + RESET);
         System.out.println();
