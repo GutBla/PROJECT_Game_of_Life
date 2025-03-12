@@ -1,10 +1,67 @@
 # Game of Life Conway's
-![Java](https://img.shields.io/badge/Project-Java-blue)
+[![PROJECT](https://img.shields.io/badge/-PROJECT-0d1117.svg?logo=googlekeep&style=popout&logoColor=white)](#)
+[![Java](https://img.shields.io/badge/Java-ec2025.svg?logo=openjdk&style=popout&logoColor=white)](#)
 
 ![Protada Game of Life](images/Protada-Game-of-Life.png)
 
+[![Status: Completed](https://img.shields.io/badge/Status-Completed-verde.svg?logo=&style=popout)](#)
+
 # **El Juego de la Vida de Conway**
 
+## Descripción del Proyecto
+
+Este proyecto es una implementación del **Juego de la Vida** de Conway en Java. Utiliza una cuadrícula de células que evolucionan a través de generaciones según reglas simples. El estado de cada célula en la siguiente generación depende de las células vecinas. El juego permite personalizar las configuraciones como el tamaño de la cuadrícula, la población inicial, el número de generaciones y la velocidad de la simulación. Se ejecuta a través de la línea de comandos, proporcionando una experiencia interactiva para observar cómo las células evolucionan con el tiempo.
+
+### Características
+
+- **Simulación de generaciones**: Genera nuevas configuraciones de células basadas en reglas del Juego de la Vida.
+- **Configuración de la Población Inicial**: Puedes establecer la población inicial mediante un string o generar una aleatoria.
+- **Configuración de Parámetros**: Desde la CLI, puedes definir el ancho y alto de la cuadrícula, el número de generaciones, la velocidad entre generaciones y la población inicial.
+- **Variedad en vecindarios**: Soporta diferentes tipos de vecindarios como Von Neumann, Hexagonal Diagonal, Moore, etc.
+- **Salida visual en consola**: Muestra el estado de cada generación con colores para representar las células vivas y muertas.
+
+## Requisitos Previos
+
+- Java 17
+
+## Instalación
+
+1. Clona el repositorio:
+
+    ```bash
+    git clone https://github.com/GutBla/PROJECT_Game_of_Life.git
+    ```
+
+2. Accede al directorio del proyecto:
+
+    ```bash
+    cd PROJECT_Game_of_Lif
+    ```
+
+3. Asegúrate de tener Java 17 o superior instalado.
+
+## Uso
+
+Para ejecutar el proyecto, utiliza la línea de comandos (CLI) con los siguientes parámetros de configuración:
+
+- `w=<ancho>`: Ancho de la cuadrícula (opciones: 10, 20, 40, 80).
+- `h=<alto>`: Alto de la cuadrícula (opciones: 10, 20, 40).
+- `g=<generaciones>`: Número de generaciones a simular (un número positivo).
+- `s=<velocidad>`: Velocidad de la simulación en milisegundos por generación (entre 250 y 1000).
+- `p=<población>`: Población inicial (puede ser `rnd` para aleatorio o una cadena de `1`s y `0`s representando células vivas y muertas).
+- `n=<tipoVecindario>`: Tipo de vecindario (1: Von Neumann, 2: Hexagonal Diagonal, 3: Moore, 4: Reverse Von Neumann, 5: Parallels).
+
+Para iniciar la simulación, ejecuta el siguiente comando en la línea de comandos, pasando los parámetros de configuración:
+
+```bash
+java Main w=40 h=20 g=100 s=500 p=rnd n=3
+```
+
+Esto iniciará el juego con una cuadrícula de 40x20, 100 generaciones, velocidad de 500 ms por generación, población aleatoria y un vecindario tipo Moore.
+
+El proyecto se ejecuta desde el archivo **Main.java**. La simulación de generaciones comenzará una vez que se validen los parámetros.
+
+---
 ## ¿Qué es el Juego de la Vida?
 
 El Juego de la Vida es un autómata celular, un sistema que evoluciona a través de una serie de generaciones aplicando reglas simples sobre una malla de celdas. Fue creado por el matemático John Horton Conway en 1970 como un experimento para observar cómo pueden surgir patrones complejos y comportamiento emergente a partir de reglas muy simples. A pesar de ser solo un juego, ha demostrado tener relevancia en matemáticas, biología, y ciencias de la computación, e incluso se ha comprobado que tiene la capacidad de simular una máquina de Turing, lo que lo convierte en un modelo universal de computación.
@@ -365,3 +422,24 @@ Población Final
 ☐ ☐ ☐ ☐ ☐ ☐ ⏹ ⏹ ☐ ☐ 
 ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐ 
 ```
+# Ejecucion del Proyecto
+
+Ahora se muestra la ejecución del proyecto con la animación generacional, donde se especifican los parámetros iniciales:
+
+Input (CLI):
+
+```bash
+h=10 w=10 p="#00100#00010#01110" n=3 g=20 s=250
+```
+
+![Ejecucion_GameofLife_1.gif](images/Ejecucion_GameofLife_1.gif)
+
+**Configuración actual, Población Inicial y Primera Generación**
+
+![Ejecucion_GameofLife_2.png](images/Ejecucion_GameofLife_2.png)
+
+**Población Final después de la ejecución de las generaciones**
+
+![Ejecucion_GameofLife_3.png](images/Ejecucion_GameofLife_3.png)
+
+Durante la ejecución, se muestran las generaciones en la consola y las células evolucionan según las reglas del Juego de la Vida. La visualización se actualiza en función de la velocidad definida por el parámetro `s`
