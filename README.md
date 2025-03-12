@@ -340,9 +340,9 @@ p="##10101#1#01"
 p="101#010#111"
 ```
 
-Se puede generar una población inicial aleatoria en esta página:
-
- [Simulador de Población Inicial - Game of Life](https://gutbla.github.io/Simulador_Poblacion_Inicial_Game_of_Life/).
+> [!NOTE]  
+> Se puede generar una población inicial aleatoria en esta página:  
+> [Simulador de Población Inicial - Game of Life](https://gutbla.github.io/TOOL_Simulador_de_Poblacion_Inicial_Game_of_Life/).
 
 Para crear una población inicial aleatoria, puedes usar la opción `p = rnd` en el simulador. Esto generará un tablero con celdas vivas y muertas dispuestas de manera aleatoria, proporcionando una variedad de configuraciones iniciales para estudiar su evolución.
 
