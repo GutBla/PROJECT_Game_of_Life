@@ -34,7 +34,7 @@ Este proyecto es una implementación del **Juego de la Vida** de Conway en Java.
 2. Accede al directorio del proyecto:
 
     ```bash
-    cd PROJECT_Game_of_Lif
+    cd PROJECT_Game_of_Life
     ```
 
 3. Asegúrate de tener Java 17 o superior instalado.
